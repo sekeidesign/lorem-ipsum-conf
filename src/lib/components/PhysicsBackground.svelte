@@ -79,19 +79,21 @@
     console.log(badges);
     World.add(world, [floor, leftWall, rightWall, ...badges]);
 
-    /** Mouse control **/
-    var mouse = Mouse.create(document.body);
-    var MouseConstraint = DomMouseConstraint.create(engine, {
-      mouse: mouse,
-      constraint: {
-        stiffness: 0.1,
-        render: {
-          visible: false,
+    // Only add mouse controls on desktop
+    if (window.innerWidth > 768) {
+      const mouse = Mouse.create(document.body);
+      const MouseConstraint = DomMouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+          stiffness: 0.1,
+          render: {
+            visible: false,
+          },
         },
-      },
-    });
+      });
 
-    World.add(world, MouseConstraint);
+      World.add(world, MouseConstraint);
+    }
   });
 </script>
 
