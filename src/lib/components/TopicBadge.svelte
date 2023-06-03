@@ -25,7 +25,7 @@
       component: Design,
       backgroundColor: 'bg-brand-green',
       name: { en: 'Design', fr: 'Design' },
-      textColor: 'text-brand-yellow',
+      textColor: 'text-brand-green',
     },
     dev: {
       component: Dev,
@@ -37,7 +37,7 @@
       component: Product,
       backgroundColor: 'bg-brand-yellow',
       name: { en: 'Product', fr: 'Produit' },
-      textColor: 'text-brand-green',
+      textColor: 'text-brand-yellow',
     },
   };
 </script>

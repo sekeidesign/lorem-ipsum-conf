@@ -65,7 +65,7 @@
     const badges = badgeEl.map((badge) => {
       return DomBodies.block(
         containerWidth / 2 + (Math.random() - 0.5) * 280,
-        -(Math.random() * 4000),
+        -(Math.random() * 1000),
         {
           Dom: {
             render: render,

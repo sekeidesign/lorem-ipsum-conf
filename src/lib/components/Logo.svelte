@@ -7,7 +7,7 @@
 
 <div class="flex items-center justify-center gap-2 md:gap-3">
   <Ai class="h-4 w-4 md:h-5 md:w-6 text-brand-orange" />
-  <Design class="h-4 w-4 md:h-5 md:w-6 text-brand-yellow" />
+  <Design class="h-4 w-4 md:h-5 md:w-6 text-brand-green" />
   <Dev class="h-4 w-4 md:h-5 md:w-6 text-brand-pink" />
-  <Product class="h-4 w-4 md:h-5 md:w-6 text-brand-green" />
+  <Product class="h-4 w-4 md:h-5 md:w-6 text-brand-yellow" />
 </div>
