@@ -5,7 +5,7 @@
   import Product from '$lib/badges/product.svg?component';
 </script>
 
-<div class="flex items-center justify-center gap-2 md:gap-4">
+<div class="flex items-center justify-center gap-2 md:gap-3">
   <Ai class="h-4 w-4 md:h-5 md:w-6 text-brand-orange" />
   <Design class="h-4 w-4 md:h-5 md:w-6 text-brand-yellow" />
   <Dev class="h-4 w-4 md:h-5 md:w-6 text-brand-pink" />

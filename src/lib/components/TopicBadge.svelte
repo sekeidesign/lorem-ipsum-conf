@@ -3,6 +3,12 @@
   import Design from '$lib/badges/design.svg?component';
   import Dev from '$lib/badges/dev.svg?component';
   import Product from '$lib/badges/product.svg?component';
+  import { language } from '$lib/stores';
+
+  let activeLanguage;
+  language.subscribe((value) => {
+    activeLanguage = value;
+  });
 
   export let topic = 'ai';
   export let element;
@@ -12,25 +18,25 @@
     ai: {
       component: Ai,
       backgroundColor: 'bg-brand-orange',
-      name: 'AI',
+      name: { en: 'AI', fr: 'IA' },
       textColor: 'text-brand-orange',
     },
     design: {
       component: Design,
       backgroundColor: 'bg-brand-yellow',
-      name: 'Design',
+      name: { en: 'Design', fr: 'Design' },
       textColor: 'text-brand-yellow',
     },
     dev: {
       component: Dev,
       backgroundColor: 'bg-brand-pink',
-      name: 'Dev',
+      name: { en: 'Dev', fr: 'Dev' },
       textColor: 'text-brand-pink',
     },
     product: {
       component: Product,
       backgroundColor: 'bg-brand-green',
-      name: 'Product',
+      name: { en: 'Product', fr: 'Produit' },
       textColor: 'text-brand-green',
     },
   };
@@ -53,7 +59,7 @@
     <h2
       class="-mt-2 uppercase text-4xl md:text-9xl md:leading-none md:-mt-4 font-semibold"
     >
-      {badges[topic].name}
+      {badges[topic].name[activeLanguage]}
     </h2>
   {/if}
 </div>

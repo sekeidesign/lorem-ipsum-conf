@@ -67,7 +67,7 @@
     const badges = badgeEl.map((badge, i) => {
       return DomBodies.block(
         containerWidth / 2 + (Math.random() - 0.5) * 160,
-        -(Math.random() * 200),
+        -(Math.random() * 4000),
         {
           Dom: {
             render: render,
@@ -98,7 +98,7 @@
 <div
   bind:offsetHeight={containerHeight}
   bind:clientWidth={containerWidth}
-  class="w-screen h-screen bg-neutral-100 overflow-hidden z-10 absolute top-0 left-0"
+  class="w-screen h-screen bg-neutral-100 overflow-hidden -z-10 absolute top-0 left-0"
 >
   <div bind:this={floorEl} class="h-16 w-screen absolute" />
   <div bind:this={leftWallEl} class="h-screen w-1 absolute" />
