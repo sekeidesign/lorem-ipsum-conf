@@ -24,7 +24,7 @@
 <button
   on:click={toggleLanguage}
   on:keypress|preventDefault={handleKeydown}
-  class="rounded-full uppercase border border-neutral-700 text-neutral-700 py-1 px-3 ml-auto cursor-pointer hover:bg-neutral-300 hover:text-neutral-900"
+  class="rounded-full uppercase border border-neutral-700 text-neutral-700 py-1 px-3 ml-auto cursor-pointer hover:bg-neutral-300 hover:text-neutral-900 focus-visible:outline-2 focus-visible:outline-brand-orange focus-visible:text-neutral-900 focus-visible:bg-neutral-300"
 >
   {activeLanguage}
 </button>
