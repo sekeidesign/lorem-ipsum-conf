@@ -36,7 +36,7 @@
 {/if}
 <Navbar />
 <div
-  class="flex flex-col items-center justify-start text-center z-20 relative pt-8 md:pt-14 gap-4 md:gap-8 pb-16"
+  class="flex flex-col items-center justify-start text-center z-20 relative pt-8 md:pt-14 px-4 gap-4 md:gap-8 pb-16"
 >
   <div class="hidden md:block">
     <Logo />
