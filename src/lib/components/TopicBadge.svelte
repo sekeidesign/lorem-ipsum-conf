@@ -1,8 +1,8 @@
 <script>
-  import Ai from '$lib/badges/ai.svg?component';
-  import Design from '$lib/badges/design.svg?component';
-  import Dev from '$lib/badges/dev.svg?component';
-  import Product from '$lib/badges/product.svg?component';
+  import Ai from '$lib/assets/badges/ai.svg?component';
+  import Design from '$lib/assets/badges/design.svg?component';
+  import Dev from '$lib/assets/badges/dev.svg?component';
+  import Product from '$lib/assets/badges/product.svg?component';
   import { language } from '$lib/stores';
 
   let activeLanguage;
@@ -23,7 +23,7 @@
     },
     design: {
       component: Design,
-      backgroundColor: 'bg-brand-yellow',
+      backgroundColor: 'bg-brand-green',
       name: { en: 'Design', fr: 'Design' },
       textColor: 'text-brand-yellow',
     },
@@ -35,7 +35,7 @@
     },
     product: {
       component: Product,
-      backgroundColor: 'bg-brand-green',
+      backgroundColor: 'bg-brand-yellow',
       name: { en: 'Product', fr: 'Produit' },
       textColor: 'text-brand-green',
     },
@@ -52,8 +52,8 @@
   <svelte:component
     this={badges[topic].component}
     class={hasText
-      ? 'text-neutral-100 w-5 h-5 md:w-16 md:h-16'
-      : badges[topic].textColor + ' w-12 h-12 md:w-24 md:h-24'}
+      ? 'text-neutral-100 w-5 h-5 md:w-14 md:h-14'
+      : badges[topic].textColor + ' w-12 h-12 md:w-20 md:h-20'}
   />
   {#if hasText}
     <h2

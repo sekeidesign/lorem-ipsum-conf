@@ -5,11 +5,13 @@
   import Navbar from '$lib/components/Navbar.svelte';
   import Loader from '$lib/components/Loader.svelte';
   import { language } from '$lib/stores';
+  import { onMount } from 'svelte';
 
   let activeLanguage;
   language.subscribe((value) => {
     activeLanguage = value;
   });
+
   const translations = {
     en: {
       heading: 'Lorem Ipsum Conf',
@@ -27,6 +29,15 @@
   const loaded = () => {
     isLoading = false;
   };
+
+  onMount(() => {
+    const languagePreference = localStorage.getItem(
+      'loremIpsumLanguagePreference'
+    );
+    if (languagePreference) {
+      language.set(languagePreference);
+    }
+  });
 </script>
 
 {#if isLoading}

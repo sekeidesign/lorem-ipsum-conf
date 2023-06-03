@@ -26,7 +26,7 @@ export default {
     },
     extend: {
       fontSize: {
-        '9xl': '7rem',
+        '9xl': '6.5rem',
         '10xl': '7.5rem',
       },
     },

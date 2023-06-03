@@ -1,8 +1,8 @@
 <script>
-  import Ai from '$lib/badges/ai.svg?component';
-  import Design from '$lib/badges/design.svg?component';
-  import Dev from '$lib/badges/dev.svg?component';
-  import Product from '$lib/badges/product.svg?component';
+  import Ai from '$lib/assets/badges/ai.svg?component';
+  import Design from '$lib/assets/badges/design.svg?component';
+  import Dev from '$lib/assets/badges/dev.svg?component';
+  import Product from '$lib/assets/badges/product.svg?component';
 </script>
 
 <div class="flex items-center justify-center gap-2 md:gap-3">

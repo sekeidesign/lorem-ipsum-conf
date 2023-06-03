@@ -10,10 +10,8 @@
   import { onMount } from 'svelte';
 
   import TopicBadge from '$lib/components/TopicBadge.svelte';
-  import Ai from '$lib/badges/ai.svg?component';
-  import Design from '$lib/badges/design.svg?component';
-  import Dev from '$lib/badges/dev.svg?component';
-  import Product from '$lib/badges/product.svg?component';
+  import SponsorBadge from '$lib/components/SponsorBadge.svelte';
+  import CoveoLogo from '$lib/assets/sponsors/coveo.svg?component';
 
   const topics = ['ai', 'design', 'dev', 'product'];
   const getTopic = (array, i) => array[Math.floor(i % array.length)];
@@ -64,9 +62,9 @@
       },
       isStatic: true,
     });
-    const badges = badgeEl.map((badge, i) => {
+    const badges = badgeEl.map((badge) => {
       return DomBodies.block(
-        containerWidth / 2 + (Math.random() - 0.5) * 160,
+        containerWidth / 2 + (Math.random() - 0.5) * 280,
         -(Math.random() * 4000),
         {
           Dom: {
@@ -108,9 +106,13 @@
   {#each topics as topic, i}
     <TopicBadge bind:element={badgeEl[i]} {topic} />
   {/each}
+  <SponsorBadge bind:element={badgeEl[4]}>
+    <CoveoLogo slot="logo" />
+    COVEO
+  </SponsorBadge>
   {#each Array(20) as _, i}
     <TopicBadge
-      bind:element={badgeEl[4 + i]}
+      bind:element={badgeEl[5 + i]}
       topic={getTopic(topics, i)}
       hasText={false}
     />

@@ -16,12 +16,12 @@
 </script>
 
 <div
-  class="bg-neutral-300 rounded-lg p-3 gap-3 overflow-hidden flex flex-col md:flex-row items-center"
+  class="bg-neutral-300 rounded-lg p-4 gap-4 overflow-hidden flex flex-col md:flex-row items-center"
   bind:this={element}
 >
-  <div class="flex items-center gap-3">
+  <div class="flex items-center gap-4">
     <div
-      class="flex flex-col items-center p-2 pb-2.5 border-t-4 border-brand-orange rounded bg-neutral-100 font-brand"
+      class="flex flex-col items-center p-3 pb-3.5 border-t-4 border-brand-orange rounded bg-neutral-100 font-brand"
     >
       <span class="text-neutral-700 leading-none -mt-1">{date.month}</span>
       <span class="text-neutral-900 text-2xl leading-none -my-1"
@@ -32,7 +32,7 @@
       <p class="uppercase text-neutral-700 leading-none text-xs text-start">
         {activeLanguage === 'fr' ? 'Prochain evenement' : 'Next event'}
       </p>
-      <h3 class="font-brand text-brand-orange text-4xl leading-none -my-1">
+      <h3 class="font-brand text-brand-orange text-4xl leading-none -mb-1">
         {eventName}
       </h3>
     </div>

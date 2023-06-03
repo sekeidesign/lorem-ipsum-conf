@@ -8,8 +8,10 @@
   const toggleLanguage = () => {
     language.update((value) => {
       if (value === 'en') {
+        localStorage.setItem('loremIpsumLanguagePreference', 'fr');
         return 'fr';
       } else {
+        localStorage.setItem('loremIpsumLanguagePreference', 'en');
         return 'en';
       }
     });
