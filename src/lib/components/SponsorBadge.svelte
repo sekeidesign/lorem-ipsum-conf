@@ -26,7 +26,7 @@
       {translations[activeLanguage]}
     </span>
     <span
-      class=" uppercase text-lg md:text-2xl md:leading-none md:-mt-1 font-semibold leading-none"
+      class=" uppercase text-lg md:text-2xl md:leading-none -mt-1 font-semibold leading-none"
     >
       <slot />
     </span>
