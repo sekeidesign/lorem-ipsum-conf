@@ -39,6 +39,6 @@
   </div>
   <div class="w-px h-12 bg-neutral-400 hidden md:block" />
   <Button as="a" href={eventLink} width="w-full md:w-min"
-    >{activeLanguage === 'fr' ? 'Enregistre' : 'Register'}</Button
+    >{activeLanguage === 'fr' ? "S'enregistrer" : 'Register'}</Button
   >
 </div>
