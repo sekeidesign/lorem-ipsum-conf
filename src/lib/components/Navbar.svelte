@@ -8,5 +8,7 @@
   <div class="block md:hidden">
     <Logo />
   </div>
-  <div class="rounded-full border border-neutral-900 px-1 pl-3 pr-3">FR</div>
+  <div class="rounded-full border border-neutral-900 px-1 pl-3 pr-3 ml-auto">
+    FR
+  </div>
 </div>
